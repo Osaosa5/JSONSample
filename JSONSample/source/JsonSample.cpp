@@ -20,10 +20,9 @@ int main()
 	{
 		if (item["id"] == 1)
 		{
-			cout << item["name"] << endl;
-			cout << item["height"] << endl;
-			cout << item["weight"] << endl;
-			cout << item["type"] << endl;
+			cout << item["height"]	<< endl;
+			cout << item["weight"]	<< endl;
+			cout << item["type"]	<< endl;
 			cout << endl;
 			break;
 		}
@@ -34,10 +33,9 @@ int main()
 	{
 		if (item["id"] == 4)
 		{
-			cout << item["name"] << endl;
-			cout << item["height"] << endl;
-			cout << item["weight"] << endl;
-			cout << item["type"] << endl;
+			cout << item["height"]	<< endl;
+			cout << item["weight"]	<< endl;
+			cout << item["type"]	<< endl;
 			cout << endl;
 			break;
 		}
