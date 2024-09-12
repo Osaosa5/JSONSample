@@ -35,6 +35,18 @@ void JsonManeger::ClearJson()
     _mJson.clear();
 }
 
+bool JsonManeger::IsJsonFile(const std::string& fileName)
+{
+	// キーの検索
+	auto itr = _mJson.find(fileName);
+
+	// キーがあった
+	if (itr != _mJson.end()) return true;
+
+	// キーが無かった
+    return false;
+}
+
 nlohmann::json JsonManeger::LoadJsonFile(const std::string& fileName)
 {
     // キーの検索

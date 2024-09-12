@@ -45,6 +45,13 @@ public:
 	static	void	ClearJson();
 
 	/**
+	* @brief		JSONファイルが登録されているか確認する
+	* @param[in]	fileName 確認するファイル名
+	* @return		登録されていればtrue, されていなければfalse
+	*/
+	static	bool	IsJsonFile(const std::string& fileName);
+
+	/**
 	 * @brief		JSONファイルを読み込む
 	 * @param[in]	fileName 読み込むファイル名
 	 * @return		読み込んだJSONデータを返す
