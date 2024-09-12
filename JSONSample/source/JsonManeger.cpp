@@ -15,6 +15,20 @@ void JsonManeger::Release()
 	ClearJson();
 }
 
+bool JsonManeger::DeleteJson(const std::string& fileName)
+{
+	// キーの検索
+	auto itr = _mJson.find(fileName);
+	if (itr != _mJson.end())
+	{
+		// キーがあった
+		_mJson.erase(itr);
+		return true;
+	}
+	// キーが無かった
+	return false;
+}
+
 void JsonManeger::ClearJson()
 {
     // すべてのデータの削除をする
